@@ -121,22 +121,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
-/* Background Textures */
-
-.bloc-bg-texture::before{
-	content:"";
-	background-size: 2px 2px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left:0;
-	right:0;
-}
-.texture-darken::before{
-	background: rgba(0,0,0,0.5);
-}
-
-
 /* Light theme */
 
 .d-bloc .card,.l-bloc{
@@ -172,6 +156,13 @@ a:hover{text-decoration: none; cursor:pointer;}
 .hero .hero-nav{
 	padding-left:inherit;
 	padding-right:inherit;
+}
+/* Two Bars Menu Icon Thick */
+.navbar-light .menu-icon-two-bars-thick .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='5' stroke-miterlimit='10' d='M4,10H26M4,20H26'/%3E%3C/svg%3E");
+}
+.navbar-dark .menu-icon-two-bars-thick .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='5' stroke-miterlimit='10' d='M4,10H26M4,20H26'/%3E%3C/svg%3E");
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	color: rgb(64, 64, 64);
@@ -209,7 +200,23 @@ button{
 	outline: none!important;
 }
 
+.btn-sq{
+	border-radius: 0px;
+}
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
+}
 
+/* = Icons
+-------------------------------------------------------------- */
+.icon-md{
+	font-size:30px!important;
+}
 
 
 
@@ -227,6 +234,24 @@ button{
 	border-radius:0 0 29px 29px;
 }
 
+/* = Dividers
+-------------------------------------------------------------- */
+.divider-h{
+	padding:20px 0;
+	width:100%;
+	display:inline-block;
+}
+.divider-h span{
+	display: block;
+	border-top:1px solid transparent;
+}
+.divider-half{
+	width: 50%;
+	margin: 0 auto;
+}
+.dropdown-menu .divider-h,.dropdown-menu .divider-half{
+	padding:0;
+}
 
 
 
@@ -270,15 +295,45 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"HACKED";
 	font-size:100px;
 }
+.bloc-divider-t-fill{
+	fill:#4D23D8;
+	height:60px;
+}
+.img-style{
+	width:300px;
+	height:300px;
+}
+.h3-style{
+	width:100%;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
+/* Background colour styles */
+
+.bgc-splashed-white{
+	background-color:#FCFFFF;
+}
 
 /* Text colour styles */
 
-.tc-white{
-	color:#FFFFFF!important;
+.tc-splashed-white{
+	color:#FCFFFF!important;
+}
+
+/* Button colour styles */
+
+.wire-btn-black{
+	color:#000000!important;
+	border-color:#000000!important;
+}
+
+/* Icon colour styles */
+
+.icon-splashed-white{
+	color:#FCFFFF!important;
+	border-color:#FCFFFF!important;
 }
 
 
@@ -365,9 +420,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 @media (max-width: 767px){
 	.h1-style{
 		font-family:"HACKED";
+		line-height:80px;
+		font-size:80px;
 	}
 	.link-style{
 		font-family:"helvetica";
+	}
+	
+}
+
+@media (max-width: 575px){
+	.footer-link{
+		text-align:center;
 	}
 	
 }

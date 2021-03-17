@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
 	<loc>https://cryptonephew.com</loc>
-	<lastmod>2021-03-16</lastmod>
+	<lastmod>2021-03-17</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>1.0</priority>
+	<image:image>
+	<image:loc>https://cryptonephew.com/img/face_co%281%29.png</image:loc>
+	<image:title>me</image:title>
+	</image:image>
 	<video:video>
 	<video:content_loc>https://cryptonephew.com/vid/4K_2.mp4</video:content_loc>
 	<video:title>4K_2</video:title>
-	</video:video>
-	<video:video>
-	<video:content_loc>https://cryptonephew.com/vid/video-placeholder.mp4</video:content_loc>
-	<video:title>video-placeholder</video:title>
 	</video:video>
 	<image:image>
 	<image:loc>https://cryptonephew.com/img/</image:loc>
