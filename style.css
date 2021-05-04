@@ -82,6 +82,26 @@ a:hover{text-decoration: none; cursor:pointer;}
 	align-self: flex-end;
 }
 
+/* = Full Width Blocs 
+-------------------------------------------------------------- */
+
+.full-width-bloc{
+	padding-left:0;
+	padding-right:0;
+}
+.full-width-bloc .row{
+	margin-left:0;
+	margin-right:0;
+}
+.full-width-bloc .container{
+	width:100%;
+	max-width:100%!important;
+}
+.full-width-bloc .carousel img{
+	width:100%;
+	height:auto;
+}
+
 
 /* Background Textures */
 
@@ -430,6 +450,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 @media (max-width: 767px){
 	.h1-bloc-1-style{
 		font-size:29px;
+	}
+	
+	/* Small Text Margin Offsets */
+	.mg-lg-sm{
+		margin-top: 10px;
+		margin-bottom:40px;
 	}
 	
 }
