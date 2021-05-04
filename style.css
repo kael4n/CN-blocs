@@ -1,14 +1,14 @@
 /*-----------------------------------------------------------------------------------
-	Crypto Nephew
-	About: A new website made w/ Blocs
-	Author: KB
+	CNephew
+	About: Crypto Nephew website.
+	Author: Kaelan B
 	Version: 1.0
 	Built with Blocs
 -----------------------------------------------------------------------------------*/
 body{
 	margin:0;
 	padding:0;
-    background:#000000;
+    background:#FFFFFF;
     overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,17 +23,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;animation-name: preloader-fade;animation-delay: 2s;animation-duration: 0.5s;animation-fill-mode: both;}
 .preloader-complete{animation-delay:0.1s;}
 @keyframes preloader-fade {0% {opacity: 1;visibility: visible;}100% {opacity: 0;visibility: hidden;}}
-
-/* = Web Fonts
--------------------------------------------------------------- */
-
-@font-face {
-	font-family:'HACKED';
-	src: url('./fonts/HACKED/Hacked-KerX.ttf');
-	src: url('./fonts/HACKED/Hacked-KerX.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 
 /* = Blocs
 -------------------------------------------------------------- */
@@ -53,6 +42,13 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc .container{
 	padding-left:0;
 	padding-right:0;
+}
+
+
+/* Sizes */
+
+.bloc-lg{
+	padding:100px 20px;
 }
 
 /* = Full Screen Blocs 
@@ -87,40 +83,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
-/* Background Styles */
-
-.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
-	-webkit-background-size: auto!important;
-	-moz-background-size: auto!important;
-	-o-background-size: auto!important;
-	background-size: auto!important;
-}
-.bg-center{
-	-webkit-background-size: auto;
-}
-
-
-/* Video Background Styles */
-
-.video-bg-container, .bloc-video{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	right: -50%;
-	overflow: hidden;
-	transform: translateX(-50%);
-	-webkit-transform:translateX(-50%);
-}
-.bloc-video, .video-bg-container iframe{
-	width: auto;
-	height: auto;
-	min-width: 100%;
-	min-height: 100%;
-	z-index: 0;
-}
-
-
 /* Background Textures */
 
 .bloc-bg-texture::before{
@@ -132,59 +94,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 	left:0;
 	right:0;
 }
-.texture-darken-strong::before{
-	background: rgba(0,0,0,0.8);
-}
-
-
-/* Dark theme */
-
-.d-bloc{
-	color:rgba(255,255,255,.7);
-}
-.d-bloc button:hover{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
-	border-color:rgba(255,255,255,.9);
-}
-.d-bloc .divider-h span{
-	border-color:rgba(255,255,255,.2);
-}
-.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
-	color:rgba(255,255,255,1);
-}
-.d-bloc .navbar-toggle .icon-bar{
-	background:rgba(255,255,255,1);
-}
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
-	color:rgba(255,255,255,1);
-	border-color:rgba(255,255,255,1);
-}
-.d-bloc .card{
-	color:rgba(0,0,0,.5);
-}
-.d-bloc .card button:hover{
-	color:rgba(0,0,0,.7);
-}
-.d-bloc .card icon{
-	border-color:rgba(0,0,0,.7);
-}
-.d-bloc .card .divider-h span{
-	border-color:rgba(0,0,0,.1);
-}
-.d-bloc .card .a-btn{
-	color:rgba(0,0,0,.6);
-}
-.d-bloc .card .a-btn:hover{
-	color:rgba(0,0,0,1);
-}
-.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
-	color:rgba(0,0,0,.7);
-	border-color:rgba(0,0,0,.3);
+.texture-paper::before{
+	background: url("img/texture-paper.png");
+	background-size: 280px 280px;
 }
 
 
@@ -224,13 +136,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-left:inherit;
 	padding-right:inherit;
 }
-/* Two Bars Menu Icon Thick */
-.navbar-light .menu-icon-two-bars-thick .navbar-toggler-icon{
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='5' stroke-miterlimit='10' d='M4,10H26M4,20H26'/%3E%3C/svg%3E");
-}
-.navbar-dark .menu-icon-two-bars-thick .navbar-toggler-icon{
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='5' stroke-miterlimit='10' d='M4,10H26M4,20H26'/%3E%3C/svg%3E");
-}
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	color: rgb(64, 64, 64);
 }
@@ -253,6 +158,10 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin-top:10px;
 	margin-bottom:20px;
 }
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -267,16 +176,15 @@ button{
 	outline: none!important;
 }
 
-.btn-sq{
-	border-radius: 0px;
-}
-.btn-wire{
-	background:transparent!important;
-	border:2px solid transparent;
-}
-.btn-wire:hover{
-	background:transparent!important;
-	border:2px solid transparent;
+.btn-glossy{
+	border:1px solid rgba(0,0,0,.09);
+	border-bottom-color:rgba(0,0,0,.2);
+	text-shadow:0 1px 0 rgba(0,0,1,.2);
+	box-shadow: 0 1px 3px rgba(0,0,1,.35), inset 0 1px 0 0 rgba(255,255,255,.4), inset 0 1px 0 2px rgba(255,255,255,.08);
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
+	 background-image: -o-linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
+	background-image: linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
 }
 
 /* = Icons
@@ -286,6 +194,11 @@ button{
 }
 
 
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+.sm-shadow{
+	text-shadow:0 1px 2px rgba(0,0,0,.3);
+}
 
 
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
@@ -331,32 +244,56 @@ button{
 	stroke-linecap:round;
 }
 
+/* Hide Object */
+.object-hidden{
+	display:none;
+}
+
 /* = Custom Styling
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
-	font-family:"HACKED";
+	font-family:"Roboto";
+	color:#FEFFFF!important;
 }
 .container{
 	max-width:1140px;
 }
 .h1-style{
-	font-family:"HACKED";
-	font-size:100px;
-}
-.bloc-divider-t-fill{
-	fill:#4D23D8;
-	height:60px;
-}
-.img-style{
-	width:300px;
-	height:300px;
-}
-.h3-style{
-	width:100%;
+	font-size:43px;
+	font-family:Roboto;
+	width:51.43%;
 }
 .link-style{
 	font-family:Pacifico;
+}
+.h1-bloc-1-style{
+	font-family:Roboto;
+	width:100%;
+}
+.btn-style{
+	font-weight:bold;
+}
+.p-style{
+	font-family:Roboto;
+}
+.img-style{
+	width:200px;
+}
+.img-bloc-3-style{
+	width:200px;
+}
+.img-bloc-4-style{
+	width:200px;
+}
+.h1-3-style{
+	font-family:Roboto;
+}
+.h4-style{
+	font-family:Roboto;
+}
+.text-span-color{
+	color:#ffffff;
 }
 
 /* = Colour
@@ -364,36 +301,51 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Background colour styles */
 
-.bgc-splashed-white{
-	background-color:#FCFFFF;
-}
-.bgc-black{
-	background-color:#000000;
+.bgc-white{
+	background-color:#FEFFFF;
 }
 
 /* Text colour styles */
 
-.tc-black{
-	color:#000000!important;
-}
-.tc-splashed-white{
-	color:#FCFFFF!important;
+.tc-white{
+	color:#FEFFFF!important;
 }
 
 /* Button colour styles */
 
-.wire-btn-black{
-	color:#000000!important;
-	border-color:#000000!important;
+.btn-black{
+	background:#000000;
+	color:#FFFFFF!important;
+}
+.btn-black:hover{
+	background:#000000!important;
+	color:#FFFFFF!important;
+}
+
+/* Link colour styles */
+
+.ltc-white{
+	color:#FEFFFF!important;
+}
+.ltc-white:hover{
+	color:#cbcccc!important;
 }
 
 /* Icon colour styles */
 
-.icon-splashed-white{
-	color:#FCFFFF!important;
-	border-color:#FCFFFF!important;
+.icon-white{
+	color:#FEFFFF!important;
+	border-color:#FEFFFF!important;
 }
 
+/* Bloc image backgrounds */
+
+.bg-bg{
+	background-image:url("img/bg.jpg");
+}
+.bg-bg1{
+	background-image:url("img/bg1.jpg");
+}
 
 
 
@@ -476,20 +428,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     }
 }
 @media (max-width: 767px){
-	.h1-style{
-		font-family:"HACKED";
-		line-height:80px;
-		font-size:80px;
-	}
-	.link-style{
-		font-family:"helvetica";
-	}
-	
-}
-
-@media (max-width: 575px){
-	.footer-link{
-		text-align:center;
+	.h1-bloc-1-style{
+		font-size:29px;
 	}
 	
 }
