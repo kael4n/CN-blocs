@@ -238,6 +238,25 @@ button{
 .icon-md{
 	font-size:30px!important;
 }
+.icon-lg{
+	font-size:60px!important;
+}
+.icon-round{
+	margin:0 auto;
+	border:2px solid transparent;
+	border-radius: 50%;
+	padding: 32px 30px 26px 30px;
+	min-width:80px;
+}
+.icon-round.icon-md,.icon-square.icon-md,.icon-rounded.icon-md{
+	min-width: 92px;
+}
+.icon-round.icon-lg,.icon-square.icon-lg,.icon-rounded.icon-lg{
+	min-width: 122px;
+}
+.icon-round.icon-xl,.icon-square.icon-xl,.icon-rounded.icon-xl{
+	min-width: 162px;
+}
 
 
 /* = Text & Icon Styles
@@ -297,11 +316,6 @@ button{
 	stroke-linecap:round;
 }
 
-/* Hide Object */
-.object-hidden{
-	display:none;
-}
-
 /* = Custom Styling
 -------------------------------------------------------------- */
 
@@ -356,20 +370,26 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .container-div-style{
 	width:100%;
 }
+.container-div-bloc-1-style{
+	height:200px;
+}
+.container-div-bloc-3-style{
+	height:100px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
-.bgc-white{
-	background-color:#FEFFFF;
+.bgc-ghost-white{
+	background-color:#FAFBFF;
 }
 
 /* Text colour styles */
 
-.tc-white{
-	color:#FEFFFF!important;
+.tc-ghost-white{
+	color:#FAFBFF!important;
 }
 
 /* Button colour styles */
@@ -393,18 +413,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Link colour styles */
 
-.ltc-white{
-	color:#FEFFFF!important;
+.ltc-ghost-white{
+	color:#FAFBFF!important;
 }
-.ltc-white:hover{
-	color:#cbcccc!important;
+.ltc-ghost-white:hover{
+	color:#c8c9cc!important;
 }
 
 /* Icon colour styles */
 
-.icon-white{
-	color:#FEFFFF!important;
-	border-color:#FEFFFF!important;
+.icon-ghost-white{
+	color:#FAFBFF!important;
+	border-color:#FAFBFF!important;
 }
 
 /* Bloc image backgrounds */
