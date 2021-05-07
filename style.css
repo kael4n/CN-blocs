@@ -264,6 +264,15 @@ button{
 .sm-shadow{
 	text-shadow:0 1px 2px rgba(0,0,0,.3);
 }
+/* = Text Widths
+-------------------------------------------------------------- */
+.text-w-50{
+	max-width:50%;
+}
+.text-center.text-w-sm, .text-center.text-w-md, .text-center.text-w-lg, .text-center.text-w-90, .text-center.text-w-80, .text-center.text-w-70, .text-center.text-w-60, .text-center.text-w-50{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
