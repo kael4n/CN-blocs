@@ -266,8 +266,8 @@ button{
 }
 /* = Text Widths
 -------------------------------------------------------------- */
-.text-w-50{
-	max-width:50%;
+.text-w-60{
+	max-width:60%;
 }
 .text-center.text-w-sm, .text-center.text-w-md, .text-center.text-w-lg, .text-center.text-w-90, .text-center.text-w-80, .text-center.text-w-70, .text-center.text-w-60, .text-center.text-w-50{
 	margin-left: auto;
@@ -538,6 +538,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		width:450px;
 		font-size:28px;
 		border-radius:17px 17px 17px 17px;
+	}
+	.h4-style{
+		width:50%;
 	}
 	
 	/* Small Text Margin Offsets */
